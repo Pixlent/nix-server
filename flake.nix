@@ -15,7 +15,7 @@
         modules = [
           ./common/base.nix
           ./hosts/chandler/default.nix
-          ./hosts/joey/hardware-configuration.nix
+          ./hosts/chandler/hardware-configuration.nix
         ];
       };
 
