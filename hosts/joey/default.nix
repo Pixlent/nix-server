@@ -7,7 +7,7 @@
     description = "Joey";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
-  }
+  };
 
   system.stateVersion = "25.11";
 }
