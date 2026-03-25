@@ -4,7 +4,7 @@
 
   users.users.joey = {
     isNormalUser = true;
-    description: "Joey";
+    description = "Joey";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
   }
