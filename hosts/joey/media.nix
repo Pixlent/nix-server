@@ -1,6 +1,6 @@
 { config, pkgs, ...}:
 {
-  services.jellyfin {
+  services.jellyfin = {
     enable = true;
     package = pkgs.jellyfin;
     user = "jellyfin";
