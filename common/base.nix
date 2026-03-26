@@ -23,6 +23,7 @@
     neovim
     git
     wget
+    pciutils
   ];
 
   # Enable the OpenSSH daemon.
