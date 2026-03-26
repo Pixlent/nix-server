@@ -22,14 +22,14 @@
     device = "/dev/disk/by-uuid/AAE1-5052";
     fsType = "vfat";
     options = [ "fmask=0077" "dmask=0077" ];
-  }
+  };
 
   swapDevices =
   [
     {
       device = "/dev/disk/by-uuid/59eba817-d0f1-45d0-bd51-ba709dc94511";
     }
-  ]
+  ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
