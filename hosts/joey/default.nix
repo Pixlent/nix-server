@@ -2,7 +2,7 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./media.nix
+    ./../../modules/jellyfin/default.nix
   ];
 
   # GPU setup
