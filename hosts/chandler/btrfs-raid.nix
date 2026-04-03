@@ -15,9 +15,8 @@
       snapshot_preserve = "7d 4w 3m";
       preserve_snapshots = true;
 
-      volume "/tank" {
-        snapshot_dir "/tank/.snapshots";
-      }
+      volume = "/tank";
+      snapshot_dir = "/tank/.snapshots";
     };
   };
 }
