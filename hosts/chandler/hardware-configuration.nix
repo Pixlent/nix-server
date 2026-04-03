@@ -18,6 +18,12 @@
       fsType = "ext4";
     };
 
+  fileSystems."/tank" = {
+      device = "/dev/disk/by-id/scsi-0QEMU_QEMU_HARDDISK_drive-scsi1";
+      fsType = "btrfs";
+      options = [ "defaults" "compress=zstd:1" "noatime" "space_cache=v2" ];
+    };
+
   swapDevices =
     [ { device = "/dev/disk/by-uuid/f41bdf18-434b-4163-99c0-8e61185d9a00"; }
     ];
