@@ -3,6 +3,7 @@
   imports = [
     ./hardware-configuration.nix
     ./btrfs-raid.nix
+    ./../../modules/caddy/default.nix
   ];
 
   # Bootloader.
