@@ -13,7 +13,7 @@
     settings = {
       snapshot_preserve_min = "7d";
       snapshot_preserve = "7d 4w 3m";
-      preserve_snapshots = true;
+      preserve_snapshots = "yes";    # ← String "yes", not true
 
       volume = "/tank";
       snapshot_dir = "/tank/.snapshots";
