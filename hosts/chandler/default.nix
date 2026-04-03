@@ -18,5 +18,9 @@
     packages = with pkgs; [];
   };
 
+  environment.systemPackages = with pkgs; [
+    btrfs-progs
+  ];
+
   system.stateVersion = "25.11";
 }
