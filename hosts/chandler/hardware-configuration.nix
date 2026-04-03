@@ -21,7 +21,14 @@
   fileSystems."/tank" = {
       device = "UUID=a8dbaedc-54c9-420e-8d91-21ef964458c6";
       fsType = "btrfs";
-      options = [ "defaults" "compress=zstd:1" "noatime" "space_cache=v2" ];
+      options = [
+        "defaults"
+        "compress=zstd:1"
+        "noatime"
+        "space_cache=v2"
+        "degraded"
+        "device=/dev/sdb,device=/dev/sdc"  # Explicit paths
+      ];
     };
 
   swapDevices =
