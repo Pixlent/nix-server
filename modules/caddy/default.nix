@@ -21,7 +21,7 @@ in {
       "jellyfin.pixlent.me" = {
         extraConfig = ''
           reverse_proxy http://10.0.0.184:8096
-        ''
+        '';
       };
     };
   };
