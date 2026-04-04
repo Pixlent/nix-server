@@ -22,8 +22,8 @@ in {
         extraConfig = ''
           reverse_proxy http://10.0.0.184:8096
         ''
-      }
-    }
+      };
+    };
   };
 
   systemd.services.caddy.serviceConfig.EnvironmentFile = "/etc/caddy/secrets.env";
